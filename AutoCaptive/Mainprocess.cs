@@ -26,10 +26,16 @@ namespace AutoCaptive
                 proc.Kill();
             }
 
-            foreach (Process proc in Process.GetProcessesByName("AutoCaptive"))
+            Process current = Process.GetCurrentProcess();
+            Process[] processes = Process.GetProcessesByName(current.ProcessName);
+            foreach (Process process in processes)
             {
-                proc.Kill();
+                if (process.Id != current.Id)
+                {
+                    process.Kill();
+                }
             }
+
             Application.Exit();
         }
 
