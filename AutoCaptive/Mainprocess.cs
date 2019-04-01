@@ -27,7 +27,7 @@ namespace AutoCaptive
             }
 
             Process current = Process.GetCurrentProcess();
-            Process[] processes = Process.GetProcessesByName(current.ProcessName);
+            Process[] processes = Process.GetProcessesByName("AutoCaptive");
             foreach (Process process in processes)
             {
                 if (process.Id != current.Id)
@@ -36,7 +36,7 @@ namespace AutoCaptive
                 }
             }
 
-            Application.Exit();
+            current.Kill();
         }
 
         public static void callBase()

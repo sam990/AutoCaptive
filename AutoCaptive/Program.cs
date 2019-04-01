@@ -38,7 +38,7 @@ namespace AutoCaptive
                 return;
             }*/
             Process current = Process.GetCurrentProcess();
-            Process[] processes = Process.GetProcessesByName(current.ProcessName);
+            Process[] processes = Process.GetProcessesByName("AutoCaptive");
             foreach (Process process in processes)
             { 
                 if (process.Id != current.Id)
