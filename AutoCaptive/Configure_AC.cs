@@ -22,7 +22,7 @@ namespace AutoCaptive
         }
         private void loadinfo()
         {
-            try
+            if(File.Exists(config_file_path))
             {
                 string[] arr = File.ReadLines(config_file_path).ToArray();
                 int arrlen = arr.Length;
@@ -57,9 +57,9 @@ namespace AutoCaptive
                 arrlen--;
 
             }
-            catch(FileNotFoundException exnotfound)
+            else
             {
-                
+                return;
             }
         }
 
@@ -110,6 +110,8 @@ namespace AutoCaptive
                 proc.Kill();
                 proc.WaitForExit();
             }
+
+            Directory.CreateDirectory(Path.GetDirectoryName(config_file_path));
 
             FileStream faccount = File.Open(config_file_path, FileMode.Create);
             using (var sw = new StreamWriter(faccount))

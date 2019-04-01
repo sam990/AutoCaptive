@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -26,8 +27,8 @@ namespace AutoCaptive
             {
                 Application.Run(new Configure_AC());
             }
-            
-            const string appName = "AutoCaptive";
+
+            /*const string appName = "AutoCaptive";
             bool createdNew;
 
             mutex = new Mutex(true, appName, out createdNew);
@@ -35,9 +36,18 @@ namespace AutoCaptive
             if (!createdNew)
             { 
                 return;
+            }*/
+            Process current = Process.GetCurrentProcess();
+            Process[] processes = Process.GetProcessesByName(current.ProcessName);
+            foreach (Process process in processes)
+            { 
+                if (process.Id != current.Id)
+                {
+                    process.Kill();
+                }
             }
-            
-            
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
