@@ -1,0 +1,10 @@
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\bin\x64\Debug\AutoCaptive.exe.config
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\bin\x64\Debug\AutoCaptive.exe
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\bin\x64\Debug\AutoCaptive.pdb
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\obj\x64\Debug\AutoCaptive.csprojResolveAssemblyReference.cache
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\obj\x64\Debug\AutoCaptive.Form1.resources
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\obj\x64\Debug\AutoCaptive.Properties.Resources.resources
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\obj\x64\Debug\AutoCaptive.csproj.GenerateResource.cache
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\obj\x64\Debug\AutoCaptive.csproj.CoreCompileInputs.cache
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\obj\x64\Debug\AutoCaptive.exe
+C:\Users\Sameer\source\repos\AutoCaptive\AutoCaptive\obj\x64\Debug\AutoCaptive.pdb
